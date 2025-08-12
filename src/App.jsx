@@ -1,11 +1,11 @@
 import './App.css'
 import Banner from './Component/Banner'
-import Navbar from './Component/Header'
+import Navbar from './Component/Navbar'
 
 function App() {
 
   return (
-    <div className=''>
+    <div>
       <Navbar></Navbar>
       <Banner></Banner>
     </div>
