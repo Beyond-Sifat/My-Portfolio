@@ -6,11 +6,13 @@ export default function useDarkTheme() {
         const newTheme = theme === "light" ? "dark" : "light"
         setTheme(newTheme)
         document.documentElement.classList.toggle("dark", newTheme === "dark")
+        localStorage.setItem("theme", newTheme)
     }
     useEffect(() => {
-        const storeTheme = localStorage.getItem("theme") || "light"
-        setTheme(storeTheme);
-        document.documentElement.classList.toggle("dark", storeTheme === "dark")
+        const storedTheme = localStorage.getItem("theme");
+        const defaultTheme = storedTheme || "light"; // ✅ Default is light
+        setTheme(defaultTheme);
+        document.documentElement.classList.toggle("dark", defaultTheme === "dark");
     }, [])
 
     return { theme, themeToggle }

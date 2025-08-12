@@ -1,13 +1,13 @@
 import './App.css'
-import Banner from './Component/Banner'
-import Navbar from './Component/Navbar'
+// import Banner from './Component/Banner'
+// import Navbar from './Component/Navbar'
 
 function App() {
 
   return (
     <div>
-      <Navbar></Navbar>
-      <Banner></Banner>
+      {/* <Navbar></Navbar>
+      <Banner></Banner> */}
     </div>
   )
 }
