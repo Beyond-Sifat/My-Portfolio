@@ -1,7 +1,7 @@
 import { Moon, Sun } from 'lucide-react';
 import useDarkTheme from '../hooks/useDarkTheme';
 import React, { useState } from 'react';
-const navLinks = ['Home', 'About', 'Projects', 'Contact']
+const navLinks = ['Home', 'About', 'Skills', 'Projects', 'Contact']
 const Navbar = () => {
     const { theme, themeToggle } = useDarkTheme()
     const [openMenu, setOpenMenu] = useState(false);

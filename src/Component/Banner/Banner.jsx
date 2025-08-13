@@ -1,4 +1,4 @@
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Download, Facebook, Github, Linkedin, Twitter } from "lucide-react";
 import { useEffect, useState } from "react";
 import "./banner.css"
 import myPic from "../../assets/Sifat-protfolio.png"
@@ -55,6 +55,50 @@ const Banner = () => {
                         <button className="px-8 py-4 font-semibold rounded-full border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white transition-all duration-300">
                             Get In Touch
                         </button>
+
+                        <a
+                            href="#"
+                            download
+                            className="px-8 py-4 font-semibold rounded-full flex items-center gap-2 border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white transition-all duration-300"
+                        >
+                            <Download size={18} />
+                            Download Resume
+                        </a>
+                    </div>
+
+                    <div className="flex justify-center md:justify-start gap-4 mt-6">
+                        <a
+                            href="https://github.com/Beyond-Sifat"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                        >
+                            <Github className="text-gray-800 dark:text-white" size={20} />
+                        </a>
+                        <a
+                            href="https://linkedin.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                        >
+                            <Linkedin className="text-gray-800 dark:text-white" size={20} />
+                        </a>
+                        <a
+                            href="https://twitter.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                        >
+                            <Twitter className="text-gray-800 dark:text-white" size={20} />
+                        </a>
+                        <a
+                            href="https://facebook.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                        >
+                            <Facebook className="text-gray-800 dark:text-white" size={20} />
+                        </a>
                     </div>
                 </div>
 
