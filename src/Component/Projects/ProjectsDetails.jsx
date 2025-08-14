@@ -24,7 +24,6 @@ const ProjectsDetails = () => {
 
     return (
         <section className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:from-gray-900 dark:via-blue-900 dark:to-purple-900 py-20 px-6">
-            {/* Header */}
             <div className="text-center mb-12">
                 <h1 className="text-5xl md:text-6xl font-bold text-gray-800 dark:text-white mb-4">
                     <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
