@@ -19,6 +19,10 @@ const Banner = () => {
         }, 100)
         return () => clearInterval(timer);
     }, []);
+
+    const scrollToSection = (sectionId) => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    };
     return (
         <section className='min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:bg-gray-900bg-gradient-to-br dark:from-gray-900 dark:via-blue-900 dark:to-purple-900'>
             <div className="absolute inset-0">
@@ -49,10 +53,14 @@ const Banner = () => {
                     </p>
 
                     <div className="flex flex-col md:flex-row gap-4 md:justify-start justify-center">
-                        <button className="px-8 py-4 font-semibold rounded-full hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-blue-500/25 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+                        <button
+                            onClick={() => scrollToSection('projects')}
+                            className="px-8 py-4 font-semibold rounded-full hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-blue-500/25 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
                             View My Work
                         </button>
-                        <button className="px-8 py-4 font-semibold rounded-full border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white transition-all duration-300">
+                        <button
+                            onClick={() => scrollToSection('contact')}
+                            className="px-8 py-4 font-semibold rounded-full border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white transition-all duration-300">
                             Get In Touch
                         </button>
 
@@ -68,7 +76,7 @@ const Banner = () => {
 
                     <div className="flex justify-center md:justify-start gap-4 mt-6">
                         <a
-                            href="https://github.com/Beyond-Sifat"
+                            href=""
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition"

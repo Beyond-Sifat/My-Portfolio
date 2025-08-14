@@ -1,9 +1,10 @@
 import { Moon, Sun } from 'lucide-react';
-import useDarkTheme from '../hooks/useDarkTheme';
+// import useDarkTheme from '../hooks/useDarkTheme';
 import React, { useState } from 'react';
-const navLinks = ['Home', 'About', 'Skills', 'Projects', 'Contact']
+import { Link } from 'react-router';
+const navLinks = ['Home', 'About', 'Skills', 'Education', 'Projects', 'Contact']
 const Navbar = () => {
-    const { theme, themeToggle } = useDarkTheme()
+    // const { theme, themeToggle } = useDarkTheme()
     const [openMenu, setOpenMenu] = useState(false);
 
     const handleScroll = (id) => {
@@ -14,21 +15,23 @@ const Navbar = () => {
         setOpenMenu(false);
     };
 
+
+
     return (
         <nav className='bg-gradient-to-br from-gray-100 via-blue-100 to-purple-100 dark:bg-gray-900bg-gradient-to-br dark:from-gray-900 dark:via-blue-900 dark:to-purple-900 fixed top-0 w-full z-50'>
             <div className='flex justify-between items-center px-6 py-5'>
 
                 <div className='text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent'>
-                    &lt;BeyondSifat/&gt;
+                    <Link to='/'> &lt;BeyondSifat/&gt;</Link>
                 </div>
 
                 <ul className='hidden md:flex items-center gap-6'>
-                    <button
+                    {/* <button
                         onClick={themeToggle}
                         className="rounded-full p-2 shadow-md shadow-purple-400 cursor-pointer text-gray-600 hover:text-purple-400 transition-all ease-in-out dark:bg-white dark:shadow-amber-400 dark:hover:text-amber-400"
                     >
                         {theme === "light" ? <Moon /> : <Sun />}
-                    </button>
+                    </button> */}
                     {navLinks.map((links) => (
                         <li key={links}>
                             <button
@@ -42,12 +45,12 @@ const Navbar = () => {
 
                 </ul>
                 <div className='md:hidden flex items-center gap-3'>
-                    <button
+                    {/* <button
                         onClick={themeToggle}
                         className="rounded-full p-2 shadow-md shadow-purple-400 cursor-pointer text-gray-600 hover:text-purple-400 transition-all ease-in-out dark:bg-white dark:shadow-amber-400 dark:hover:text-amber-400"
                     >
                         {theme === "light" ? <Moon /> : <Sun />}
-                    </button>
+                    </button> */}
                     <button
                         onClick={() => setOpenMenu(!openMenu)}
                         className='text-[#0c1758] dark:text-white'>

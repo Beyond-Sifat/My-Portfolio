@@ -19,7 +19,7 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50">
+        <section id="skills" className="py-20 bg-gradient-to-br from-gray-100 via-blue-100 to-purple-100">
             <div className="container mx-auto px-6">
                 <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
                     My{" "}
@@ -28,7 +28,6 @@ const Skills = () => {
                     </span>
                 </h2>
 
-                {/* First Row */}
                 <Marquee gradient={false} speed={50}>
                     {skillsRow1.map((skill, index) => (
                         <div
@@ -41,7 +40,6 @@ const Skills = () => {
                     ))}
                 </Marquee>
 
-                {/* Second Row (Reverse Direction) */}
                 <Marquee gradient={false} speed={50} direction="right" className="mt-8">
                     {skillsRow2.map((skill, index) => (
                         <div

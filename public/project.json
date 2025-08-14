@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Plant Care Website",
+        "image": "/src/assets/projectPic/Plant.png",
+        "description": "A responsive website that insure plants health by track it watering time, watering amount build with built with React, Firebase, and MongoDB",
+        "technologies": [
+            "React",
+            "Tailwind CSS",
+            "React Router",
+            "Firebase",
+            "MongoDB",
+            "Node.js",
+            "Express.js"
+        ],
+        "liveLink": "https://assignment-10-a27cc.web.app",
+        "repoLink": "https://github.com/Beyond-Sifat/Assignment-10-client"
+    },
+    {
+        "id": 2,
+        "name": "Food Tracking Website",
+        "image": "/src/assets/projectPic/Food.png",
+        "description": "A responsive web app to track food items' expiry dates, alert users about nearly expired and expired foods, built with React, Firebase, and MongoDB",
+        "technologies": [
+            "MERN",
+            "Firebase",
+            "Tailwind CSS"
+        ],
+        "liveLink": "https://assignment-11-e4673.web.app",
+        "repoLink": "https://github.com/Beyond-Sifat/Assignment-11-client"
+    },
+    {
+        "id": 3,
+        "name": "Sports Management Website",
+        "image": "/src/assets/projectPic/Sports.png",
+        "description": "Sports Club Management System (SCMS) is a web-based platform designed to streamline and simplify the management of sports clubs. It enables club administrators to efficiently handle court bookings, manage members, schedule events, and track resources, all from a centralized dashboard. With a modern frontend built using React and a backend powered by Node.js & Express, the system ensures a smooth, responsive, and secure experience. It also includes authentication for user role management (admins, members), real-time updates, and easy-to-use forms for managing bookings and registrations.The goal of SCMS is to reduce manual work, enhance coordination, and provide a seamless user experience for both club staff and members.",
+        "technologies": [
+            "React",
+            "Node.js",
+            "MongoDB",
+            "Express.js",
+            "Tailwind CSS",
+            "DaisyUI",
+            "Firebase",
+            "stripe"
+        ],
+        "liveLink": "https://assignment-12-3c587.web.app",
+        "repoLink": "https://github.com/Beyond-Sifat/Assignment-12-client"
+    }
+]
