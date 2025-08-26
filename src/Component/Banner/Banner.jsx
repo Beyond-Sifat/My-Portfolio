@@ -65,12 +65,13 @@ const Banner = () => {
                         </button>
 
                         <a
-                            href="#"
-                            download
+                            href="https://drive.google.com/uc?export=download&id=1DUuRq_1qB2gihxrgk1-8z_v4fZvSsIK-"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="px-8 py-4 font-semibold rounded-full flex items-center gap-2 border-2 border-green-500 dark:border-green-400 text-green-600 dark:text-green-400 hover:bg-green-500 dark:hover:bg-green-400 hover:text-white dark:hover:text-white transition-all duration-300 justify-center md:justify-start bg-transparent hover:border-green-600 dark:hover:border-green-300"
                         >
                             <Download size={18} />
-                            Download Resume
+                            My Resume
                         </a>
                     </div>
 
