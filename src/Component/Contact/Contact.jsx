@@ -1,25 +1,51 @@
 // src/components/Contact.jsx
 import { Mail, Phone, MessageCircle, Send } from "lucide-react";
-// import { useState } from "react";
+import { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-    // const [form, setForm] = useState({
-    //     email: "",
-    //     phone: "",
-    //     message: "",
-    // });
+    const [form, setForm] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+    });
+    const [loading, setLoading] = useState(false);
 
-    // const handleChange = (e) => {
-    //     const { name, value } = e.target;
-    //     setForm((prev) => ({ ...prev, [name]: value }));
-    // };
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setForm((prev) => ({ ...prev, [name]: value }));
+    };
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     console.log(form);
-    //     alert("Message sent!");
-    //     setForm({ email: "", phone: "", message: "" });
-    // };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        if (!form.email || !form.message) return;
+        try {
+
+            setLoading(true)
+            await emailjs.send(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                {
+                    name: form.name,
+                    email: form.email,
+                    phone: form.phone,
+                    message: form.message,
+                },
+                {
+                    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+                }
+            );
+            alert("Message sent successfully!");
+            setForm({ name: "", email: "", phone: "", message: "" });
+        } catch (err) {
+            console.error(err);
+            alert("Something went wrong. Please try again.");
+        } finally {
+            setLoading(false);
+        }
+    };
 
     return (
         <section
@@ -82,7 +108,7 @@ const Contact = () => {
                                 <div>
                                     <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">WhatsApp</p>
                                     <p className="font-semibold text-gray-800 dark:text-gray-100">
-                                        +880 1894-108866
+                                        +880 1865-288579
                                     </p>
                                 </div>
                             </div>
@@ -101,7 +127,21 @@ const Contact = () => {
                             Send a Message
                         </h3>
 
-                        <form className="space-y-6">
+                        <form onSubmit={handleSubmit} className="space-y-6">
+                            <div>
+                                <label className="block text-sm mb-3 text-gray-600 dark:text-gray-300 font-semibold">
+                                    Your Name
+                                </label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="e.g. Shakil Ahmed"
+                                    required
+                                    value={form.name}
+                                    onChange={handleChange}
+                                    className="w-full p-4 rounded-xl border border-gray-200/50 dark:border-gray-600/30 bg-white/90 dark:bg-gray-700/50 text-gray-800 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/60 dark:focus:ring-blue-400/60 focus:border-transparent transition-all duration-300"
+                                />
+                            </div>
                             <div>
                                 <label className="block text-sm mb-3 text-gray-600 dark:text-gray-300 font-semibold">
                                     Your Email
@@ -111,6 +151,8 @@ const Contact = () => {
                                     name="email"
                                     placeholder="e.g. youremail@example.com"
                                     required
+                                    value={form.email}
+                                    onChange={handleChange}
                                     className="w-full p-4 rounded-xl border border-gray-200/50 dark:border-gray-600/30 bg-white/90 dark:bg-gray-700/50 text-gray-800 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/60 dark:focus:ring-blue-400/60 focus:border-transparent transition-all duration-300"
                                 />
                             </div>
@@ -124,6 +166,8 @@ const Contact = () => {
                                     name="phone"
                                     placeholder="+880 1XXX-XXXXXX"
                                     required
+                                    value={form.phone}
+                                    onChange={handleChange}
                                     className="w-full p-4 rounded-xl border border-gray-200/50 dark:border-gray-600/30 bg-white/90 dark:bg-gray-700/50 text-gray-800 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/60 dark:focus:ring-blue-400/60 focus:border-transparent transition-all duration-300"
                                 />
                             </div>
@@ -137,16 +181,19 @@ const Contact = () => {
                                     rows={5}
                                     placeholder="Write your message..."
                                     required
+                                    value={form.message}
+                                    onChange={handleChange}
                                     className="w-full p-4 rounded-xl border border-gray-200/50 dark:border-gray-600/30 bg-white/90 dark:bg-gray-700/50 text-gray-800 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/60 dark:focus:ring-blue-400/60 focus:border-transparent transition-all duration-300 resize-none"
                                 />
                             </div>
 
                             <button
                                 type="submit"
+                                disabled={loading}
                                 className="w-full flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-semibold text-white shadow-lg hover:shadow-blue-500/25 dark:hover:shadow-blue-400/25 transition-all duration-300 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 hover:from-blue-700 hover:to-purple-700 dark:hover:from-blue-400 dark:hover:to-purple-400 hover:scale-105"
                             >
                                 <Send size={18} />
-                                Send Message
+                                {loading ? "Sending..." : "Send Message"}
                             </button>
                         </form>
                     </div>

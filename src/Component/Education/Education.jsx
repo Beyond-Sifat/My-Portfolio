@@ -11,19 +11,19 @@ const Education = () => {
             name: 'Bachelor of Science',
             institution: 'East Delta University',
             description: '',
-            gpa: '3.75',
+            gpa: '',
         },
         {
             date: '2023 - 2024',
             name: 'HSC',
-            institution: 'abc',
+            institution: 'Kazem Ali College, Chawkbazar',
             description: 'Completed Higher Secondary Certificate with focus on science subjects. Strong foundation in physics.',
             gpa: '3.75',
         },
         {
             date: '2020 - 2022',
             name: 'SSC',
-            institution: 'abc',
+            institution: 'Burischar high School, Hathazari',
             description: 'Completed Secondary School Certificate with focus on science subjects',
             gpa: '3.75',
         },
@@ -36,7 +36,7 @@ const Education = () => {
             name: 'Web Development',
             institution: 'Programming Hero',
             description: 'Comprehensive web development course covering MERN stack, modern JavaScript, and industry best practices.',
-            StudentId: 'PH-123456',
+            StudentId: 'WEB11-0810',
         },
     ]
 

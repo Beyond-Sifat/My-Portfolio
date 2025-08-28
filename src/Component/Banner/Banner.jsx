@@ -63,9 +63,9 @@ const Banner = () => {
                             className="px-8 py-4 font-semibold rounded-full border-2 border-blue-500 dark:border-blue-400 text-blue-600 dark:text-blue-400 hover:bg-blue-500 dark:hover:bg-blue-400 hover:text-white dark:hover:text-white transition-all duration-300 bg-transparent hover:border-blue-600 dark:hover:border-blue-300">
                             Get In Touch
                         </button>
-
+{/* https://drive.google.com/uc?export=download&id=1DUuRq_1qB2gihxrgk1-8z_v4fZvSsIK- */}
                         <a
-                            href="https://drive.google.com/uc?export=download&id=1DUuRq_1qB2gihxrgk1-8z_v4fZvSsIK-"
+                            href=""
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-8 py-4 font-semibold rounded-full flex items-center gap-2 border-2 border-green-500 dark:border-green-400 text-green-600 dark:text-green-400 hover:bg-green-500 dark:hover:bg-green-400 hover:text-white dark:hover:text-white transition-all duration-300 justify-center md:justify-start bg-transparent hover:border-green-600 dark:hover:border-green-300"
@@ -78,7 +78,7 @@ const Banner = () => {
                     {/* Social Links */}
                     <div className="flex justify-center md:justify-start gap-4 mt-8">
                         <a
-                            href=""
+                            href="https://github.com/Beyond-Sifat"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110"
@@ -86,7 +86,7 @@ const Banner = () => {
                             <Github className="text-gray-800 dark:text-gray-200" size={20} />
                         </a>
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/syed-sifat2004"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 hover:bg-blue-500 dark:hover:bg-blue-600 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110 group"
