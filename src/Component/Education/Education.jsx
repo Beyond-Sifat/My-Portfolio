@@ -7,8 +7,8 @@ const Education = () => {
 
     const academicData = [
         {
-            date: '2025',
-            name: 'Bachelor of Science',
+            date: '2025 - Present',
+            name: 'BSc in Computer Science and Engineering',
             institution: 'East Delta University',
             description: '',
             gpa: '',
@@ -18,14 +18,14 @@ const Education = () => {
             name: 'HSC',
             institution: 'Kazem Ali College, Chawkbazar',
             description: 'Completed Higher Secondary Certificate with focus on science subjects. Strong foundation in physics.',
-            gpa: '3.75',
+            gpa: '4.83',
         },
         {
             date: '2020 - 2022',
             name: 'SSC',
             institution: 'Burischar high School, Hathazari',
             description: 'Completed Secondary School Certificate with focus on science subjects',
-            gpa: '3.75',
+            gpa: '4.83',
         },
 
     ]
