@@ -1,4 +1,4 @@
-import { ChevronDown, Download, Facebook, Github, Linkedin, Twitter } from "lucide-react";
+import { ChevronDown, Download, Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 import { useEffect, useState } from "react";
 // import "./banner.css"
 import myPic from "../../assets/Sifat-protfolio.png"
@@ -86,7 +86,7 @@ const Banner = () => {
                             <Github className="text-gray-800 dark:text-gray-200" size={20} />
                         </a>
                         <a
-                            href="https://www.linkedin.com/in/syed-sifat2004"
+                            href="https://www.linkedin.com/in/beyond-sifat"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 hover:bg-blue-500 dark:hover:bg-blue-600 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110 group"
@@ -94,7 +94,7 @@ const Banner = () => {
                             <Linkedin className="text-gray-800 dark:text-gray-200 group-hover:text-white" size={20} />
                         </a>
                         <a
-                            href="https://twitter.com"
+                            href="https://x.com/beyond_sifat"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 hover:bg-blue-400 dark:hover:bg-blue-500 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110 group"
@@ -102,12 +102,20 @@ const Banner = () => {
                             <Twitter className="text-gray-800 dark:text-gray-200 group-hover:text-white" size={20} />
                         </a>
                         <a
-                            href="https://facebook.com"
+                            href="https://www.facebook.com/beyond.sifat"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 hover:bg-blue-600 dark:hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110 group"
                         >
                             <Facebook className="text-gray-800 dark:text-gray-200 group-hover:text-white" size={20} />
+                        </a>
+                        <a
+                            href="https://www.instagram.com/beyond_sifat"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 hover:bg-blue-600 dark:hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110 group"
+                        >
+                            <Instagram className="text-gray-800 dark:text-gray-200 group-hover:text-white" size={20} />
                         </a>
                     </div>
                 </div>
