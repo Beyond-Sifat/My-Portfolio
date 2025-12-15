@@ -8,39 +8,62 @@
 } */
 
 html.dark body {
-   background-color: #000000;
-background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23101010' fill-opacity='0.57' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23101010' fill-opacity='0.57' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 body {
-    /* @apply bg-white dark:bg-gray-700; */
-    background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e8e8e8' fill-opacity='0.14' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+  /* @apply bg-white dark:bg-gray-700; */
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e8e8e8' fill-opacity='0.14' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .text-gradient {
-  background: linear-gradient(
-    90deg,
-    #000000 0%,
-    #2b2b2b 35%,
-    #5a5a5a 65%,
-    #9a9a9a 100%
-  );
+  background: linear-gradient(90deg,
+      #000000 0%,
+      #2b2b2b 35%,
+      #5a5a5a 65%,
+      #9a9a9a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Text gradient — Dark Theme */
 html.dark .text-gradient {
-  background: linear-gradient(
-    90deg,
-    #ffffff 0%,
-    #a1a1a1 35%,
-    #d1d1d1 65%,
-    #ffffff 100%
-  );
-   -webkit-background-clip: text;
+  background: linear-gradient(90deg,
+      #ffffff 0%,
+      #cfcfcf 40%,
+      #a8a8a8 70%,
+      #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+
+
+
+
+/* Text gradient — Dark Theme */
+html.dark .text-gradient-soft {
+  background: linear-gradient(90deg,
+      #ffffff 0%,
+      #a1a1a1 35%,
+      #d1d1d1 65%,
+      #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-soft {
+  background: linear-gradient(90deg,
+      #000000 0%,
+      #2b2b2b 30%,
+      #6a6a6a 60%,
+      #b0b0b0 100%);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
