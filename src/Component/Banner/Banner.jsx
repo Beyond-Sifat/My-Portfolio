@@ -38,7 +38,7 @@ const Banner = () => {
             <div className="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-10 items-center">
                 {/* Text Section */}
                 <div className="animation text-center md:text-left">
-                    <h1 className="text-5xl md:text-7xl font-bold bg-[linear-gradient(90deg,_#000_0%,_#2b2b2b_35%,_#5a5a5a_65%,_#9a9a9a_100%)] bg-clip-text text-transparent mb-6 leading-tight max-md:pt-20 dark:bg-[linear-gradient(90deg,_#fff_0%,_#a1a1a1_35%,_#d1d1d1_65%,_#fff_0%)]">
+                    <h1 className="text-5xl md:text-7xl font-bold text-gradient mb-6 leading-tight max-md:pt-20">
                         Hi! I'm{" "}
                         <span >
                             Sifat
