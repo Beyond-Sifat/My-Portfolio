@@ -11,9 +11,10 @@ const Projects = () => {
             .then((data) => setProjects(data))
             .catch((err) => console.error("Error loading projects:", err));
     }, []);
+    // bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800
 
     return (
-        <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800 relative overflow-hidden">
+        <section id="projects" className="py-20 relative overflow-hidden">
             {/* Background Effects */}
             <div className="absolute inset-0">
                 <div className="absolute top-16 right-20 w-64 h-64 bg-blue-400/10 dark:bg-blue-500/5 rounded-full blur-3xl"></div>

@@ -14,10 +14,11 @@ const ProjectsDetails = () => {
                 setProject(foundProject);
             });
     }, [id]);
+    // bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800
 
     if (!project) {
         return (
-            <section className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800 flex items-center justify-center">
+            <section className="min-h-screen flex items-center justify-center">
                 <div className="text-center">
                     <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 flex items-center justify-center animate-pulse">
                         <Code className="w-8 h-8 text-blue-600 dark:text-blue-400" />
@@ -29,9 +30,9 @@ const ProjectsDetails = () => {
             </section>
         );
     }
-
+//bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800
     return (
-        <section className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800 py-20 px-6 relative overflow-hidden">
+        <section className="min-h-screen py-20 px-6 relative overflow-hidden">
             {/* Background Effects */}
             <div className="absolute inset-0">
                 <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400/10 dark:bg-blue-500/5 rounded-full blur-3xl animate-pulse"></div>

@@ -10,8 +10,10 @@ const Error = () => {
     const goBack = () => {
         navigate(-1);
     };
+
+    //bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800
     return (
-        <section className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800 flex items-center justify-center relative overflow-hidden">
+        <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
             {/* Background Effects */}
             <div className="absolute inset-0">
                 <div className="absolute top-20 left-20 w-72 h-72 bg-blue-400/10 dark:bg-blue-500/5 rounded-full blur-3xl animate-pulse"></div>
@@ -27,13 +29,6 @@ const Error = () => {
                         <h1 className="text-9xl md:text-[12rem] font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-red-500 dark:from-blue-400 dark:via-purple-400 dark:to-red-400 bg-clip-text text-transparent opacity-20 select-none">
                             404
                         </h1>
-
-                        {/* Warning Icon Overlay */}
-                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-r from-red-100 to-orange-100 dark:from-red-900/30 dark:to-orange-900/30 flex items-center justify-center backdrop-blur-sm border border-red-200/50 dark:border-red-700/30 animate-pulse">
-                                <AlertTriangle className="w-12 h-12 md:w-16 md:h-16 text-red-500 dark:text-red-400" />
-                            </div>
-                        </div>
                     </div>
                 </div>
 

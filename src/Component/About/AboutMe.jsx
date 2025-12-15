@@ -7,11 +7,12 @@ const AboutMe = () => {
         { value: "5+", label: "Projects Completed" },
         { value: "10+", label: "Technologies" }
     ];
-
+// bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800
     return (
         <section
             id="about"
-            className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800 transition-colors duration-300 relative overflow-hidden"
+            className="
+            transition-colors duration-300 relative overflow-hidden py-20"
         >
 
             <div className="absolute inset-0">

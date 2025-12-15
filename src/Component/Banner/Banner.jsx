@@ -1,6 +1,6 @@
 import { ChevronDown, Download, Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 import { useEffect, useState } from "react";
-// import "./banner.css"
+import "./banner.css"
 import myPic from "../../assets/Sifat-protfolio.png"
 
 const Banner = () => {
@@ -23,27 +23,30 @@ const Banner = () => {
     const scrollToSection = (sectionId) => {
         document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
     };
+    // bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800
     return (
-        <section className='min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800'>
+        <section
+            className='min-h-screen flex items-center justify-center relative overflow-hidden '
+        >
             {/* Background Effects */}
             <div className="absolute inset-0">
-                <div className="absolute top-20 left-20 w-72 h-72 bg-blue-400/20 dark:bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-                <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-400/20 dark:bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-blue-300/10 to-purple-300/10 dark:from-blue-600/5 dark:to-purple-600/5 rounded-full blur-2xl"></div>
+                <div className="absolute top-20 left-20 w-72 h-72 dark:bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+                {/* <div className="absolute bottom-20 right-20 w-96 h-96  dark:bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div> */}
+                {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r dark:from-blue-600/5 dark:to-purple-600/5 rounded-full blur-2xl"></div> */}
             </div>
 
             <div className="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-10 items-center">
                 {/* Text Section */}
                 <div className="animation text-center md:text-left">
-                    <h1 className="text-5xl md:text-7xl font-bold text-gray-800 dark:text-gray-100 mb-6 leading-tight max-md:pt-20">
+                    <h1 className="text-5xl md:text-7xl font-bold bg-[linear-gradient(90deg,_#000_0%,_#2b2b2b_35%,_#5a5a5a_65%,_#9a9a9a_100%)] bg-clip-text text-transparent mb-6 leading-tight max-md:pt-20 dark:bg-[linear-gradient(90deg,_#fff_0%,_#a1a1a1_35%,_#d1d1d1_65%,_#fff_0%)]">
                         Hi! I'm{" "}
-                        <span className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
+                        <span >
                             Sifat
                         </span>
                     </h1>
-                    <h2 className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-8 min-h-[2.5rem] font-medium">
+                    <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-white mb-8 min-h-[2.5rem] font-medium">
                         {displayText}
-                        <span className="animate-pulse text-blue-600 dark:text-blue-400">|</span>
+                        <span className="animate-pulse text-black dark:text-white">|</span>
                     </h2>
                     <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl leading-relaxed">
                         Crafting exceptional digital experiences with modern technologies.
@@ -55,12 +58,12 @@ const Banner = () => {
                     <div className="flex flex-col md:flex-row gap-4 md:justify-start justify-center">
                         <button
                             onClick={() => scrollToSection('projects')}
-                            className="px-8 py-4 font-semibold rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-blue-500/25 dark:hover:shadow-blue-400/25 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white hover:from-blue-700 hover:to-purple-700 dark:hover:from-blue-400 dark:hover:to-purple-400">
+                            className="px-8 py-4 font-semibold rounded-full hover:scale-105 transition-all duration-300 bg-black text-white dark:bg-white dark:text-black">
                             View My Work
                         </button>
                         <button
                             onClick={() => scrollToSection('contact')}
-                            className="px-8 py-4 font-semibold rounded-full border-2 border-blue-500 dark:border-blue-400 text-blue-600 dark:text-blue-400 hover:bg-blue-500 dark:hover:bg-blue-400 hover:text-white dark:hover:text-white transition-all duration-300 bg-transparent hover:border-blue-600 dark:hover:border-blue-300">
+                            className="px-8 py-4 font-semibold rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-black dark:text-white dark:shadow-white/10 hover:shadow-lg hover:scale-105 transition-all duration-300">
                             Get In Touch
                         </button>
 
@@ -68,7 +71,7 @@ const Banner = () => {
                             href="https://drive.google.com/uc?export=download&id=1DUuRq_1qB2gihxrgk1-8z_v4fZvSsIK-"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-8 py-4 font-semibold rounded-full flex items-center gap-2 border-2 border-green-500 dark:border-green-400 text-green-600 dark:text-green-400 hover:bg-green-500 dark:hover:bg-green-400 hover:text-white dark:hover:text-white transition-all duration-300 justify-center md:justify-start bg-transparent hover:border-green-600 dark:hover:border-green-300"
+                            className="px-8 py-4 font-semibold rounded-full flex items-center gap-2 justify-center md:justify-start hover:scale-105 transition-all duration-300 bg-black text-white border border-gray-600 dark:shadow-white/10 hover:shadow-lg"
                         >
                             <Download size={18} />
                             My Resume
@@ -81,52 +84,56 @@ const Banner = () => {
                             href="https://github.com/Beyond-Sifat"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110"
+                            className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 transition-all duration-300 hover:scale-110 group"
                         >
-                            <Github className="text-gray-800 dark:text-gray-200" size={20} />
+                            <Github className="text-gray-800 dark:text-gray-200 group-hover:fill-black" size={20} />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/beyond-sifat"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 hover:bg-blue-500 dark:hover:bg-blue-600 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110 group"
+                            className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 transition-all duration-300 hover:scale-110 group"
                         >
-                            <Linkedin className="text-gray-800 dark:text-gray-200 group-hover:text-white" size={20} />
+                            <Linkedin className="text-gray-800 dark:text-gray-200 group-hover:text-blue-500" size={20} />
                         </a>
                         <a
                             href="https://x.com/beyond_sifat"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 hover:bg-blue-400 dark:hover:bg-blue-500 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110 group"
+                            className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 transition-all duration-300 hover:scale-110 group"
                         >
-                            <Twitter className="text-gray-800 dark:text-gray-200 group-hover:text-white" size={20} />
+                            <Twitter className="text-gray-800 dark:text-gray-200 group-hover:fill-blue-400" size={20} />
                         </a>
                         <a
                             href="https://www.facebook.com/beyond.sifat"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 hover:bg-blue-600 dark:hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110 group"
+                            className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 hover:bg-blue-400 transition-all duration-300 hover:scale-110 group"
                         >
-                            <Facebook className="text-gray-800 dark:text-gray-200 group-hover:text-white" size={20} />
+                            <Facebook className="text-gray-800 dark:text-gray-200 group-hover:fill-white group-hover:text-white" size={20} />
                         </a>
                         <a
                             href="https://www.instagram.com/beyond_sifat"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 hover:bg-blue-600 dark:hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110 group"
+                            className="p-3 rounded-full bg-gray-200/80 dark:bg-gray-700/80 transition-all duration-300 hover:scale-110 group"
                         >
-                            <Instagram className="text-gray-800 dark:text-gray-200 group-hover:text-white" size={20} />
+                            <Instagram className="text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:fill-black" size={20} />
                         </a>
                     </div>
                 </div>
 
                 {/* Image Section */}
                 <div className="flex justify-center md:justify-end">
-                    <div className="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden shadow-2xl shadow-blue-200/50 dark:shadow-blue-900/30 border-4 border-white/80 dark:border-gray-700/50 backdrop-blur-sm">
+                    <div className="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border border-gray-200 dark:border-gray-700 shadow-xl dark:shadow-white/10 shadow-black/40 transition-transform duration-300 hover:scale-[1.02]">
                         <img
                             src={myPic}
                             alt="Sifat"
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            className="
+                w-full h-full object-cover
+                transition-transform duration-500
+                hover:scale-105
+            "
                         />
                     </div>
                 </div>
@@ -134,7 +141,7 @@ const Banner = () => {
 
             {/* Scroll Indicator */}
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <ChevronDown className="text-gray-400 dark:text-gray-500 opacity-60 hover:opacity-100 transition-opacity" size={32} />
+                <ChevronDown className="text-black dark:text-white opacity-60" size={32} />
             </div>
         </section>
     );

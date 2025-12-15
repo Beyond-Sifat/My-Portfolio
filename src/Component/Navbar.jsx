@@ -15,10 +15,12 @@ const Navbar = () => {
         setOpenMenu(false);
     };
 
-
+    // bg-gradient-to-br from-gray-100 via-blue-100 to-purple-100 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800
 
     return (
-        <nav className='bg-gradient-to-br from-gray-100 via-blue-100 to-purple-100 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800 fixed top-0 w-full z-50 backdrop-blur-sm border-b border-gray-200/20 dark:border-gray-700/30'>
+        <nav
+            className='fixed top-0 w-full z-50 backdrop-blur-sm border-b border-gray-200/20 dark:border-gray-700/30'
+        >
             <div className='flex justify-between items-center px-6 py-5'>
 
                 <div className='text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent'>

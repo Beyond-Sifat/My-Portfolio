@@ -3,9 +3,9 @@ import { Heart, Code2 } from "lucide-react";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
-
+// bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 dark:from-black dark:via-gray-900 dark:to-slate-900 text-gray-300 dark:text-gray-400
     return (
-        <footer className="bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 dark:from-black dark:via-gray-900 dark:to-slate-900 text-gray-300 dark:text-gray-400 relative overflow-hidden">
+        <footer className="relative overflow-hidden">
             {/* Background Effects */}
             <div className="absolute inset-0">
                 <div className="absolute top-0 left-1/4 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl"></div>
