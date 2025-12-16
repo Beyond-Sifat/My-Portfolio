@@ -46,7 +46,7 @@ html.dark .text-gradient {
 
 
 /* Text gradient — Dark Theme */
-html.dark .text-gradient-soft {
+/* html.dark .text-gradient-soft {
   background: linear-gradient(90deg,
       #ffffff 0%,
       #a1a1a1 35%,
@@ -66,4 +66,4 @@ html.dark .text-gradient-soft {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
+} */
