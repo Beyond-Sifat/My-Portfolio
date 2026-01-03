@@ -30,15 +30,7 @@ const AboutMe = () => {
                     {/* Text Content */}
                     <div className="space-y-6 text-center md:text-left">
                         <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
-                            I started my coding journey in{" "}
-                            <strong className="text-black dark:text-white font-semibold">
-                                September 2024
-                            </strong>{" "}
-                            by teaching myself the basics. In{" "}
-                            <strong className="text-black dark:text-white font-semibold">
-                                January 2025
-                            </strong>
-                            , I joined a professional course to strengthen my skills and dive deeper into real-world projects.
+                            I started my coding journey in September 2024 by teaching myself the basics. In January 2025, I joined a professional course to strengthen my skills and dive deeper into real-world projects.
                         </p>
 
                         <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
@@ -46,19 +38,8 @@ const AboutMe = () => {
                             <strong className="text-black dark:text-white font-semibold">
                                 frontend-focused MERN developer
                             </strong>{" "}
-                            with experience in CRUD operations and working with REST APIs on the backend. My favorite part of development is building{" "}
-                            <strong className="text-black dark:text-white font-semibold">
-                                creative, user-friendly interfaces
-                            </strong>{" "}
-                            that not only work well but also look great.
-                        </p>
-
-                        <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
-                            At my core, I'm{" "}
-                            <strong className="text-black dark:text-white font-semibold">curious</strong>{" "}
-                            and an{" "}
-                            <strong className="text-black dark:text-white font-semibold">explorer</strong>{" "}
-                            — always trying to learn new things, whether in tech or beyond.
+                            with experience in CRUD operations and working with REST APIs on the backend. My favorite part of development is building creative, user-friendly interfaces that not only work well but also look great.
+                            At my core, I'm curious and an explorer — always trying to learn new things, whether in tech or beyond.
                         </p>
 
                         {/* Stats Grid */}
