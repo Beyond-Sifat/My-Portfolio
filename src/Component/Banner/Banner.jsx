@@ -1,7 +1,7 @@
 import { ChevronDown, Download, Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 import { useEffect, useState } from "react";
 import "./banner.css"
-import myPic from "../../assets/Sifat-protfolio.png"
+import myPic from "../../assets/sifat.png"
 
 const Banner = () => {
     const [displayText, setDisplayText] = useState('')
