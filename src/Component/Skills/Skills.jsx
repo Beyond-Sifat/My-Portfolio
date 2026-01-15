@@ -12,7 +12,7 @@ const Skills = () => {
         { name: "TypeScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
         { name: "Redux", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
         // { name: "JWT", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oauth/oauth-original.svg" },
-        { name: "JWT", logo: "https://seeklogo.com/images/J/json-web-tokens-jwt-io-logo-C003DEC47A-seeklogo.com.png" },
+        // { name: "JWT", logo: "https://seeklogo.com/images/J/json-web-tokens-jwt-io-logo-C003DEC47A-seeklogo.com.png" },
         { name: "REST API", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" } // commonly used as REST symbol
 
 
@@ -32,22 +32,17 @@ const Skills = () => {
 
 
     ];
-    //bg-gradient-to-br from-gray-100 via-blue-100 to-purple-100 dark:bg-gradient-to-br dark:from-slate-900 dark:via-gray-900 dark:to-slate-800
     return (
         <section id="skills"
             className="py-20 relative overflow-hidden">
 
             <div className="absolute inset-0">
                 <div className="absolute top-10 right-20 w-64 h-64 bg-blue-400/10 dark:bg-blue-500/5 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-10 left-20 w-80 h-80 bg-purple-400/10 dark:bg-purple-500/5 rounded-full blur-3xl"></div>
             </div>
 
             <div className="container mx-auto px-6 relative z-10">
-                <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800 dark:text-gray-100">
-                    My{" "}
-                    <span className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
-                        Skills
-                    </span>
+                <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-black dark:text-white">
+                    My Skills
                 </h2>
 
 
@@ -65,7 +60,7 @@ const Skills = () => {
                                         className="w-12 h-12 object-contain filter dark:brightness-110"
                                     />
                                 </div>
-                                <p className="text-gray-700 dark:text-gray-300 font-semibold text-sm text-center">
+                                <p className="text-black dark:text-white font-semibold text-sm text-center">
                                     {skill.name}
                                 </p>
                             </div>
@@ -88,7 +83,7 @@ const Skills = () => {
                                         className="w-12 h-12 object-contain filter dark:brightness-110"
                                     />
                                 </div>
-                                <p className="text-gray-700 dark:text-gray-300 font-semibold text-sm text-center">
+                                <p className="text-black dark:text-white font-semibold text-sm text-center">
                                     {skill.name}
                                 </p>
                             </div>
