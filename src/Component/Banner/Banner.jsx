@@ -124,16 +124,21 @@ const Banner = () => {
                 </div>
 
                 {/* Image Section */}
+                 {/* shadow-[0_0_20px_rgba(46,184,166,0.3)] */}
                 <div className="flex justify-center md:justify-end">
-                    <div className="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border border-gray-200 dark:border-gray-700 shadow-xl dark:shadow-white/10 shadow-black/40 transition-transform duration-300 hover:scale-[1.02]">
+                    <div className="w-52 h-52 md:w-96 md:h-96
+        bg-[rgba(241,225,220,0.3)] dark:bg-gray-950/50
+        rounded-full overflow-hidden
+        border-1
+        shadow-[0_0_30px_rgba(224,122,83,0.3)]
+        dark:shadow-[0_0_30px_rgba(40,116,184,0.3)]
+        transition-transform duration-300 hover:scale-[1.02]">
                         <img
                             src={myPic}
                             alt="Sifat"
-                            className="
-                w-full h-full object-cover
+                            className="w-full h-full object-cover
                 transition-transform duration-500
-                hover:scale-105
-            "
+                hover:scale-105"
                         />
                     </div>
                 </div>
@@ -141,7 +146,7 @@ const Banner = () => {
 
             {/* Scroll Indicator */}
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <ChevronDown className="text-black dark:text-white opacity-60" size={32} /> 
+                <ChevronDown className="text-black dark:text-white opacity-60" size={32} />
             </div>
         </section>
     );
