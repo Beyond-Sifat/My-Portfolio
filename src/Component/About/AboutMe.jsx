@@ -17,9 +17,9 @@ const AboutMe = () => {
             <div className="container mx-auto px-6">
                 {/* Section Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        <span className="text-black dark:text-white">About </span>
-                        <span className="text-gradient">
+                    <h2 className="text-4xl md:text-5xl font-bold mb-4 dark:text-white">
+                        <span className=" ">About </span>
+                        <span className="">
                             Me
                         </span>
                     </h2>
@@ -29,11 +29,11 @@ const AboutMe = () => {
                 <div className="grid md:grid-cols-2 max-w-6xl mx-auto items-center gap-16">
                     {/* Text Content */}
                     <div className="space-y-6 text-center md:text-left">
-                        <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                        <p className="text-black font-semibold dark:text-gray-400 text-lg leading-relaxed">
                             I started my coding journey in September 2024 by teaching myself the basics. In January 2025, I joined a professional course to strengthen my skills and dive deeper into real-world projects.
                         </p>
 
-                        <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                        <p className="text-black font-semibold dark:text-gray-400 text-lg leading-relaxed">
                             I am currently a{" "}
                             <strong className="text-black dark:text-white font-semibold">
                                 frontend-focused MERN developer
