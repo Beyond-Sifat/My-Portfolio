@@ -1,11 +1,14 @@
 [
     {
         "id": 1,
-        "name": "Plant Care Website",
-        "image": "/projectPic/Plant.png",
-        "description": "A responsive website that insure plants health by track it watering time, watering amount build with built with React, Firebase, and MongoDB",
+        "name": "NomadAtlas",
+        "image": "/projectPic/NomadAtlas.png",
+        "description": "A web app for remote workers to find a working friendly place with affordable cost. User can calculate monthly cost of living in different places.",
         "technologies": [
             "React",
+            "Socket.io",
+            "Google Map API",
+            "Redux",
             "Tailwind CSS",
             "React Router",
             "Firebase",
@@ -13,21 +16,30 @@
             "Node.js",
             "Express.js"
         ],
-        "liveLink": "https://happy-plants.web.app",
-        "repoLink": "https://github.com/Beyond-Sifat/Assignment-10-client"
+        "liveLink": "https://nomandatlas.web.app",
+        "repoLink": "https://github.com/abdulbariks/NomadAtlas-Client/tree/sifat"
     },
     {
         "id": 2,
-        "name": "Food Tracking Website",
-        "image": "/projectPic/Food.png",
-        "description": "A responsive web app to track food items' expiry dates, alert users about nearly expired and expired foods, built with React, Firebase, and MongoDB",
+        "name": "Thoughts",
+        "image": "/projectPic/Thoughts.png",
+        "description": "Build a full-stack post platform with secure authentication, protected routes and user- specific content management using Next.js architecture.",
         "technologies": [
-            "MERN",
+            "TypeScript",
+            "Next JS",
+            "shadcn/ui",
+            "Next API",
+            "React 19",
+            "Tailwind CSS",
+            "React Router",
             "Firebase",
-            "Tailwind CSS"
+            "MongoDB",
+            "Node.js",
+            "JWT,"
+
         ],
-        "liveLink": "https://track-food.web.app",
-        "repoLink": "https://github.com/Beyond-Sifat/Assignment-11-client"
+        "liveLink": "https://tech-pack.vercel.app",
+        "repoLink": "https://github.com/Beyond-Sifat/Tech-Pack"
     },
     {
         "id": 3,
@@ -46,5 +58,35 @@
         ],
         "liveLink": "https://sports-master-sm.web.app",
         "repoLink": "https://github.com/Beyond-Sifat/Assignment-12-client"
+    },
+    {
+        "id": 4,
+        "name": "Plant Care Website",
+        "image": "/projectPic/Plant.png",
+        "description": "A responsive website that insure plants health by track it watering time, watering amount build with built with React, Firebase, and MongoDB",
+        "technologies": [
+            "React",
+            "Tailwind CSS",
+            "React Router",
+            "Firebase",
+            "MongoDB",
+            "Node.js",
+            "Express.js"
+        ],
+        "liveLink": "https://happy-plants.web.app",
+        "repoLink": "https://github.com/Beyond-Sifat/Assignment-10-client"
+    },
+    {
+        "id": 5,
+        "name": "Food Tracking Website",
+        "image": "/projectPic/Food.png",
+        "description": "A responsive web app to track food items' expiry dates, alert users about nearly expired and expired foods, built with React, Firebase, and MongoDB",
+        "technologies": [
+            "MERN",
+            "Firebase",
+            "Tailwind CSS"
+        ],
+        "liveLink": "https://track-food.web.app",
+        "repoLink": "https://github.com/Beyond-Sifat/Assignment-11-client"
     }
 ]
