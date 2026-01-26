@@ -80,7 +80,7 @@ const Education = () => {
                 <div className='grid md:grid-cols-3 gap-6 max-w-6xl mx-auto'>
                     {data.map((item, index) => (
                         <div key={index}
-                            className='bg-white/80 dark:bg-black dark:border-gray-600 p-6 rounded-xl shadow-lg hover:shadow-xl dark:shadow-white/5 dark:hover:shadow-white/15 transition-all duration-300 hover:scale-105 border border-white/20' >
+                            className='bg-white/80  dark:bg-gray-800/90 dark:border-gray-600 p-6 rounded-xl shadow-lg hover:shadow-xl dark:shadow-white/5 dark:hover:shadow-white/15 transition-all duration-300 hover:scale-105 border border-white/20' >
 
                             {/* Date */}
                             <div className="flex items-center gap-2 mb-3 text-gray-600 dark:text-gray-400">

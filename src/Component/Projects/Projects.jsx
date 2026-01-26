@@ -45,7 +45,7 @@ const Projects = () => {
 
                                     {/* Project Number Badge */}
                                     <div className="absolute top-4 left-4">
-                                        <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white font-bold text-lg shadow-xl transform group-hover:scale-110 transition-transform duration-300">
+                                        <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#42f5e9] text-white font-bold text-lg shadow-xl transform group-hover:scale-110 transition-transform duration-300">
                                             {String(index + 1).padStart(2, '0')}
                                         </span>
                                     </div>
@@ -100,7 +100,7 @@ const Projects = () => {
                                     <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-500 mb-2">
                                         {project.name}
                                     </h3>
-                                    <div className="w-16 h-1 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 mx-auto rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                    <div className="w-16 h-1 bg-blue-600 dark:bg-blue-400 mx-auto rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 </div>
 
                                 {/* Technologies Section with enhanced design */}
@@ -109,7 +109,7 @@ const Projects = () => {
                                         {project.technologies.slice(0, 4).map((tech, techIndex) => (
                                             <span
                                                 key={techIndex}
-                                                className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/40 dark:to-purple-900/40 text-blue-700 dark:text-blue-300 text-sm font-semibold border border-blue-200/50 dark:border-blue-700/30 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
+                                                className="px-4 py-2 rounded-full  text-blue-700 dark:text-blue-300 text-sm font-semibold border border-blue-200/50 dark:border-blue-700/30 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
                                             >
                                                 {tech}
                                             </span>
@@ -126,7 +126,7 @@ const Projects = () => {
                                 <div className="flex flex-col gap-4 relative z-10">
                                     <Link
                                         to={`/projectsDetails/${project.id}`}
-                                        className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white font-semibold shadow-xl hover:shadow-blue-500/30 dark:hover:shadow-blue-400/30 hover:scale-105 transition-all duration-300 hover:from-blue-700 hover:to-purple-700 dark:hover:from-blue-400 dark:hover:to-purple-400 group/btn"
+                                        className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full border bg-white dark:bg-gray-800/90 border-blue-500/30 text-black dark:text-white font-semibold shadow-xl hover:shadow-blue-500/30 dark:hover:shadow-blue-400/30 hover:scale-105 transition-all duration-300 hover:from-blue-700 hover:to-purple-700 dark:hover:from-blue-400 dark:hover:to-purple-400 group/btn"
                                     >
                                         <span className="text-lg">View Details</span>
                                         <svg className="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -178,14 +178,14 @@ const Projects = () => {
                     <div className="mt-20 text-center">
                         <div className="inline-flex items-center gap-6 px-10 py-6 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/30 dark:border-gray-700/40 hover:scale-105 transition-all duration-300">
                             <div className="flex items-center gap-3">
-                                <div className="w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse shadow-lg"></div>
+                                <div className="w-4 h-4 bg-blue-500 rounded-full animate-pulse shadow-lg"></div>
                                 <span className="text-gray-600 dark:text-gray-400 font-semibold text-lg">
                                     {projects.length} Projects Completed
                                 </span>
                             </div>
                             <div className="w-px h-8 bg-gradient-to-b from-transparent via-gray-300 dark:via-gray-600 to-transparent"></div>
                             <div className="flex items-center gap-3">
-                                <Tag className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+                                <Tag className="w-5 h-5 text-blue-500 dark:text-blue-400" />
                                 <span className="text-gray-600 dark:text-gray-400 font-semibold text-lg">
                                     {[...new Set(projects.flatMap(p => p.technologies))].length}+ Technologies
                                 </span>
