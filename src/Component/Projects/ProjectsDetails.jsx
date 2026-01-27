@@ -44,7 +44,7 @@ const ProjectsDetails = () => {
                 {/* Header Section */}
                 <div className="text-center mb-16">
                     <h1 className="text-5xl md:text-6xl font-bold text-gray-800 dark:text-gray-100 mb-6">
-                        <span className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
+                        <span className="text-gradient">
                             {project.name}
                         </span>
                     </h1>
@@ -97,7 +97,7 @@ const ProjectsDetails = () => {
                             {project.technologies.map((tech, index) => (
                                 <span
                                     key={index}
-                                    className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-400 dark:to-purple-400 text-white text-sm font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+                                    className="px-4 py-2 rounded-full text-blue-700 dark:text-blue-300 text-sm font-semibold border border-blue-200/50 dark:border-blue-700/30 text-sm font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
                                 >
                                     {tech}
                                 </span>
@@ -111,7 +111,9 @@ const ProjectsDetails = () => {
                             href={project.liveLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white rounded-full shadow-lg hover:shadow-blue-500/25 dark:hover:shadow-blue-400/25 hover:scale-105 transition-all duration-300 font-semibold"
+                            //className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white rounded-full shadow-lg hover:shadow-blue-500/25 dark:hover:shadow-blue-400/25 hover:scale-105 transition-all duration-300 font-semibold"
+                            className="flex items-center justify-center gap-2 px-6 py-3 rounded-full border-2 border-green-500 dark:border-green-400 text-green-600 dark:text-green-400 hover:bg-green-500 dark:hover:bg-green-400 hover:text-white dark:hover:text-white transition-all duration-300 font-medium shadow-lg hover:shadow-green-500/25 hover:scale-110"
+
                         >
                             <ExternalLink size={18} />
                             Live Site
@@ -120,7 +122,9 @@ const ProjectsDetails = () => {
                             href={project.repoLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-3 px-8 py-4 bg-gray-800 dark:bg-gray-700 text-white rounded-full shadow-lg hover:shadow-gray-500/25 dark:hover:shadow-gray-600/25 hover:bg-gray-900 dark:hover:bg-gray-600 hover:scale-105 transition-all duration-300 font-semibold"
+                            //className="inline-flex items-center gap-3 px-8 py-4 bg-gray-800 dark:bg-gray-700 text-white rounded-full shadow-lg hover:shadow-gray-500/25 dark:hover:shadow-gray-600/25 hover:bg-gray-900 dark:hover:bg-gray-600 hover:scale-105 transition-all duration-300 font-semibold"
+                            className="flex items-center justify-center gap-2 px-6 py-3 rounded-full border-2 border-gray-600 dark:border-gray-500 text-gray-600 dark:text-gray-400 hover:bg-gray-600 dark:hover:bg-gray-500 hover:text-white dark:hover:text-white transition-all duration-300 font-medium shadow-lg hover:shadow-gray-500/25 hover:scale-110"
+
                         >
                             <Github size={18} />
                             Repository
