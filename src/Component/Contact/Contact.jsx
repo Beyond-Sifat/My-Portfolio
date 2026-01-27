@@ -85,11 +85,8 @@ const Contact = () => {
             </div>
 
             <div className="container mx-auto px-6 max-w-6xl relative z-10">
-                <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-800 dark:text-gray-100">
-                    Get In{" "}
-                    <span className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
-                        Touch
-                    </span>
+                <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-clack dark:text-white">
+                    Get In Touch
                 </h2>
                 <p className="text-center text-gray-600 dark:text-gray-400 mb-16 text-lg">
                     Have a question or want to work together? Drop a message below.
@@ -108,7 +105,7 @@ const Contact = () => {
 
                         <div className="space-y-6">
                             <div className="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-700/50 dark:to-gray-600/50 hover:scale-105 transition-transform duration-300">
-                                <div className="p-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white shadow-lg">
+                                <div className="p-3 rounded-xl bg-black dark:bg-white text-white dark:text-black shadow-lg">
                                     <Mail size={20} />
                                 </div>
                                 <div>
@@ -120,19 +117,19 @@ const Contact = () => {
                             </div>
 
                             <div className="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-700/50 dark:to-gray-600/50 hover:scale-105 transition-transform duration-300">
-                                <div className="p-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white shadow-lg">
+                                <div className="p-3 rounded-xl bg-black dark:bg-white text-white dark:text-black shadow-lg">
                                     <Phone size={20} />
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">Phone</p>
                                     <p className="font-semibold text-gray-800 dark:text-gray-100">
-                                        +880 1894-108866
+                                        +880 1865-288579
                                     </p>
                                 </div>
                             </div>
 
                             <div className="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-700/50 dark:to-gray-600/50 hover:scale-105 transition-transform duration-300">
-                                <div className="p-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white shadow-lg">
+                                <div className="p-3 rounded-xl bg-black dark:bg-white text-white dark:text-black shadow-lg">
                                     <MessageCircle size={20} />
                                 </div>
                                 <div>
@@ -144,8 +141,8 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="mt-8 p-4 rounded-xl bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border border-green-200/50 dark:border-green-700/30">
-                            <p className="text-sm text-green-700 dark:text-green-300 font-medium text-center">
+                        <div className="mt-8 p-4 rounded-xl bg-[rgba(40,116,184,0.3)] dark:from-blue-900/30 dark:to-purple-900/30 text-blue-700 dark:text-blue-300">
+                            <p className="text-sm font-medium text-center">
                                 I usually reply within a day
                             </p>
                         </div>
@@ -224,7 +221,7 @@ const Contact = () => {
                             <button
                                 type="submit"
                                 disabled={loading}
-                                className="w-full flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-semibold text-white shadow-lg hover:shadow-blue-500/25 dark:hover:shadow-blue-400/25 transition-all duration-300 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 hover:from-blue-700 hover:to-purple-700 dark:hover:from-blue-400 dark:hover:to-purple-400 hover:scale-105"
+                                className="w-full flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-blue-500/25 dark:hover:shadow-blue-400/25 transition-all duration-300 bg-black dark:bg-white text-white dark:text-black hover:scale-105"
                             >
                                 <Send size={18} />
                                 {loading ? "Sending..." : "Send Message"}

@@ -3,21 +3,35 @@ import { Heart, Code2 } from "lucide-react";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
-// bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 dark:from-black dark:via-gray-900 dark:to-slate-900 text-gray-300 dark:text-gray-400
+    // bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 dark:from-black dark:via-gray-900 dark:to-slate-900 text-gray-300 dark:text-gray-400
     return (
         <footer className="relative overflow-hidden">
             {/* Background Effects */}
             <div className="absolute inset-0">
                 <div className="absolute top-0 left-1/4 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl"></div>
+                {/* <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl"></div> */}
             </div>
 
             <div className="container mx-auto px-6 py-12 relative z-10">
                 {/* Main Footer Content */}
                 <div className="text-center space-y-6">
                     {/* Logo/Brand */}
-                    <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                    {/* <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                         &lt;BeyondSifat/&gt;
+                    </div> */}
+                    <div>
+                        <span
+                            className="text-3xl font-bold tracking-wide
+            bg-[linear-gradient(90deg,_#000_0%,_#2b2b2b_50%,_#6a6a6a_100%)]
+            dark:bg-[linear-gradient(90deg,_#fff_0%,_#cfcfcf_50%,_#9a9a9a_100%)]
+            bg-clip-text text-transparent
+        "
+                        >
+                            &lt;Beyond
+                        </span>
+                        <span className="text-3xl font-light text-gray-600 dark:text-gray-400">
+                            Sifat/&gt;
+                        </span>
                     </div>
 
                     {/* Quote/Tagline */}
